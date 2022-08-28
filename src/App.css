@@ -1,4 +1,681 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p {
+	font-family: "Poppins", sans-serif;
+}
+
+/* Styling of Landing Page */
+
+/* 1. Styling of the overall container */
+
+.top_container {
+	background-color: #00302e;
+	overflow-x: hidden;
+}
+
+.main_container {
+	width: 85%;
+	max-width: 1440px; 
+	/* padding: auto; */
+	margin: auto;
+}
+
+/* 2. Styling of the navigation container */
+
+.nav_container {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2em;
+}
+
+.nav_container .main_logo {
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+	font-size: 2.25rem;
+	font-weight: 700;
+	fill: Solid;
+}
+
+.nav_container .main_logo .lilies_logo {
+	/* width: 30%; */
+	margin-right: 0.5em;
+}
+
+.nav_container .right_nav {
+	display: flex;
+	align-items: center;
+}
+
+.each_nav + .each_nav {
+	margin-left: 2em;
+}
+
+.nav_container .right_nav .nav_text {
+	color: rgba(255, 255, 255, 0.87);
+	fill: Solid;
+	font-size: 1.3rem;
+}
+
+.nav_container .right_nav .nav_text:hover {
+	color: #fbddbb;
+	fill: Solid;
+}
+
+.nav_container .right_nav .signup_button {
+	padding: 0.5em 1.5em;
+	background-color: #e2b887;
+	border: none;
+	border-radius: 0.3rem;
+	color: #00302e;
+	font-size: 1.1rem;
+	font-weight: 600;
+	fill: Solid;
+}
+
+/* 3. Styling of the first row */
+
+.first_row {
+	display: flex;
+	align-items: center;
+	margin: 6em 0em;
+}
+
+.first_row .hero_text {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.first_row .hero_text .hero_head {
+	color: #ffffff;
+	fill: Solid;
+	font-size: 4.5rem;
+	font-weight: 500;
+	margin-bottom: 0.5em;
+	line-height: 5rem;
+}
+
+.first_row .hero_text .hero_head .foods_text {
+	color: #fbddbb;
+	fill: Solid;
+	font-weight: 500;
+}
+
+.first_row .hero_text .hero_content {
+	font-size: 1.13rem;
+	color: rgba(255, 255, 255, 0.74);
+	fill: Solid;
+	line-height: 2rem;
+	padding-right: 8em;
+	margin-bottom: 2em;
+}
+
+.play_store + .play_store {
+	margin-left: 1em;
+}
+
+.first_row .hero_image {
+	width: 35%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* 4. Styling of the second row */
+
+.second_row {
+	width: 45%;
+	margin: auto;
+	text-align: center;
+}
+
+.second_row .meals_head {
+	color: #ffffff;
+	font-size: 2.25rem;
+	font-weight: 700;
+	fill: Solid;
+	margin-bottom: 1em;
+}
+
+.second_row .meals_text {
+	color: rgba(255, 255, 255, 0.83);
+	fill: Solid;
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 2rem;
+}
+
+/* 5. Styling of the third row */
+
+.third_row {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5em;
+}
+
+.third_row .food_class {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+  flex: 0 1 25%;
+}
+
+/* .third_row .food_contents {
+	width: %;
+} */
+
+.third_row .food_contents .food_head {
+	color: #fbddbb;
+	font-size: 1.69rem;
+	font-weight: 700;
+	fill: Solid;
+	margin: 1em 0em 0.5em;
+}
+
+.third_row .food_contents .food_text {
+	color: rgba(255, 255, 255, 0.83);
+	font-size: 1.13rem;
+	font-weight: 400;
+	fill: Solid;
+}
+
+/* 6. Styling of the fourth row */
+
+.fourth_row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10em 0em;
+}
+
+.fourth_row .notify_content {
+	width: 45%;
+}
+
+
+.fourth_row .notify_content .mail_head {
+	font-weight: 700;
+	color: #fbddbb;
+	fill: Solid;
+	font-size: 2.25rem;
+}
+
+.fourth_row .notify_content .mail_text {
+	color: rgba(255, 255, 255, 0.95);
+	fill: Solid;
+	font-size: 1.125rem;
+	margin-top: 1.5em;
+}
+
+.fourth_row .notify_field .text_field {
+	padding: 1em 5em 1em 1em;
+	font-size: 1.125rem;
+	color: #b2b2b2;
+	font-family: "Rubik", sans-serif;
+	fill: Solid;
+	font-weight: 400;
+	border: none;
+	border-radius: 0.5rem;
+}
+
+.fourth_row .notify_field .notify_button {
+	padding: 1em 2em;
+	font-size: 1.125rem;
+	color: #00302e;
+	fill: Solid;
+	font-family: "Rubik", sans-serif;
+	font-weight: 500;
+	border: none;
+	border-radius: 0.5rem;
+	background-color: #fbddbb;
+}
+
+.field_info + .field_info {
+	margin-left: 1em;
+}
+
+/* 7. Styling of the footer container */
+
+.footer_container {
+	background-color: #0B0D17;
+	overflow-x: hidden;
+}
+
+.footer_section {
+  width: 85%;
+	max-width: 1440px;
+	margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_content {
+  margin: 3em;
+}
+
+.footer_section .each_foot .foot_head {
+  color: #F4F5F7;
+  margin-bottom: 1em;
+  fill: Solid;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.footer_section .each_foot .foot_link .foot_text {
+  color: #EEEFF4;
+  fill: Solid;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+.footer_section .each_foot .foot_link {
+  margin-top: 1em;
+}
+
+.download_play {
+  margin-bottom: 1em;
+}
+
+.hr_divider {
+  border: none;
+  border-top: 1px solid #FFFFFF;
+  opacity: 7%;
+}
+
+
+/* 8. Styling of the footer extension */
+
+.footer_ext {
+  width: 80%;
+	max-width: 1440px;
+	margin: auto;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_ext .social_icons {
+  display: flex;
+}
+
+.each_social + .each_social {
+  margin-left: 1.5em;
+}
+
+.footer_ext .copyright_content .copyright {
+  color: #D9DBE1;
+  font-size: .8rem;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  fill: Solid;
+}
+
+
+/* Sytling of Login and Register page */
+
+.overall_container {
+  width: 100%;
+  max-width: 1440px;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.overall_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left_container {
+  /* width: 30%; */
+}
+
+.overall_section .right_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5vw;
+  width: 100%;
+}
+
+.testing {
+  width: 90%;
+}
+
+.right_container .account_title {
+  margin-bottom: 3em;
+}
+
+.right_container .account_title .account_head {
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: semibold;
+  font-family: "Poppins", sans-serif;
+  color: #00302E;
+  fill: Solid;
+  text-align: center;
+}
+
+/* .overall_section .right_container .details_container {
+  display: block;
+  margin: 0 auto;
+} */
+
+.detail_field {
+  padding: 1.5em 1.5em;
+  margin-bottom: 2.5em;
+  border-width: thin;
+  border: 1px solid #FBDDBB;
+  border-radius: .3rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-style: Regular;
+  font-size: .87rem;
+  font-weight: 400;
+  color: #00302E;
+  fill: Solid;
+}
+
+.valid_input {
+  position: relative;
+}
+
+.show_field {
+  position: absolute;
+  top: 1.4rem;
+  right: 0.7rem;
+  padding-right: 1em;
+  cursor: pointer;
+  font-size: .8rem;
+  color:#00302E;
+  fill: Solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.food_button {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  width: 100%;
+  padding: 1.5em 0em;
+  border: none;
+  border-radius: .3rem;
+  font-family: "Rubik", sans-serif;
+  font-style: Medium;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #FBDDBB;
+  fill: Solid;
+  background-color: #00302E;
+}
+
+.detail_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(0, 48, 46, 0.91);
+  fill: Solid;
+}
+
+.detail_button .quest_text {
+  margin-right: .3em;
+  font-size: .88rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: rgba(0, 48, 46, 0.91);
+  fill: Solid;
+}
+
+.detail_button .go_login {
+  font-size: .88rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: rgba(0, 48, 46, 0.91);
+  fill: Solid;
+}
+
+/* For Login page */
+
+.entry_button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.entry_button .point_action {
+  font-size: .88rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  color: rgba(0, 48, 46, 0.91);
+  fill: Solid;
+}
+
+
+/* Styling of Dashboard Page */
+
+.whole_dashboard {
+  display: flex;
+  /* justify-content: space-between; */
+  overflow-x: hidden;
+  /* width: 90%; */
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 4em;
+}
+
+.side_section {
+  width: 15%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.side_section .dash_logo {
+  display: flex;
+  align-items: center;
+  /* margin-top: auto; */
+}
+
+.dash_logos {
+  align-items: center;
+  margin-bottom: auto;
+  /* align-self: flex-start; */
+}
+
+.dash_logos .logo_text {
+  margin-left: .5em;
+  color: #00302E;
+  fill: Solid;
+  font-size: 2.06rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: .2rem;
+}
+
+.sidebar_nav {
+  height: 70%;
+}
+
+.sidebar_links {
+  margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+  /* align-self: flex-start; */
+  padding: 1em 3em;
+  border-radius: 1rem;
+}
+
+.sidebar_links:hover {
+  background-color: #EFEFEF;
+  cursor: pointer;
+}
+
+.sidebar_links .dash_icons {
+  margin-right: 1em;
+}
+
+.sidebar_links .dash_text {
+  color: #707070;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  fill: Solid;
+}
+
+.sidebar_links .dash_text:hover {
+  color: #000000;
+  fill: Solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.right_dashboard {
+  margin-left: 3vw;
+  width: 90%;
+}
+
+.menu_header {
+  overflow-x: hidden;
+  margin: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_header .menu_headings .menu_greet {
+  color: #00302E;
+  fill: Solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.44rem;
+  font-style: bold;
+}
+
+.menu_header .menu_headings .head_quest {
+  color: rgba(0, 0, 0, 0.69);
+  fill: Solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: .88rem;
+  font-style: normal;
+  margin-top: 1em;
+}
+
+.menu_container {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.menu_boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu_boxes .main_menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 2em;
+    flex:0 1 25%;
+    border: rgba(0, 48, 46, 0.14) solid .2px;
+    border-width: thin;
+    border-radius: .3rem;
+    padding: 2em 2em;
+}
+
+.main_menu .food_types {
+  margin-top: 1.5em;
+}
+
+.food_text {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding: 0 1.5em;
+}
+
+.food_text .food_head {
+  color: #00302E;
+  fill: Solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-style: bold;
+  margin-bottom: 1em;
+}
+
+.food_text .food_explain {
+  font-size: .7rem;
+  color: rgba(0, 0, 0, 0.69);
+  fill: Solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main_menu .amount_details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main_menu .amount_details .amount_text {
+  font-size: .8rem;
+  color: #00302E;
+  fill: Solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.main_menu .amount_details .add_text {
+  font-size: .8rem;
+  color:#06E775;
+  fill: Solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: medium;
+}
+
+
+
+
+
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +712,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
