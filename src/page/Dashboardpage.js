@@ -53,7 +53,7 @@ const Dashboardpage = ({ data }) => {
 							What delicious meal are you craving today?
 						</p>
 					</div>
-					<div>
+					<div className='upload_profile'>
 						<img src={profile_pic} alt="upload pic" />
 					</div>
 				</header>

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import login_hero from "../assets/login_hero.svg";
 import Button from '../components/Button'
 
 const Login = () => {
+
+	const [show, setShow] = useState(false);
+	const handleShow = () => {
+		setShow(!show);
+	};
+
 	return (
 		<div className="overall_container overall_section">
 			<div className="left_container">
@@ -21,12 +27,17 @@ const Login = () => {
 						placeholder="Your Email address"
 						className="detail_field"
 					/>
-					<input
-						type="password"
-						name="password"
-						placeholder="Your Password"
-						className="detail_field"
-					/>
+					<div className="valid_input">
+						<input
+							type="password"
+							name="password"
+							placeholder="Your Password"
+							className="detail_field"
+						/>
+						<span className="show_field" onClick={handleShow}>
+							{show ? "Hide" : "show"}
+						</span>
+					</div>
 					<li>
 						<Link to="/Dashboardpage">
 							<Button text={"LOGIN"} />
