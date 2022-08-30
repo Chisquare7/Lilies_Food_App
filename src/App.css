@@ -721,7 +721,12 @@ p {
   .fourth_row .notify_field {
     display: flex;
     justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+  }
 
+  .field_info + .field_info {
+	  margin-left: .2em;
   }
 
   .fourth_row .notify_field .text_field {
@@ -787,6 +792,10 @@ p {
 
   .social_links {
     width: 60%;
+  }
+
+  .each_social + .each_social {
+  margin-left: 0em;
   }
 
 }
