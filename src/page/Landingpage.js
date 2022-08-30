@@ -119,7 +119,8 @@ const Landingpage = () => {
 								<div className="mail_content">
 									<p className="mail_text">
 										Get notified when we add new items to our specials menu,{" "}
-										<br /> update our price list of have promos!
+										<br className="for_mobile" /> update our price list of have
+										promos!
 									</p>
 								</div>
 							</div>
@@ -142,79 +143,79 @@ const Landingpage = () => {
 				<div className="footer_container">
 					<div className="footer_section footer_content">
 						<div className="footer_one each_foot">
-							<h4 className="foot_head">Company</h4>
-							<li className="foot_link">
-								<Link to="/" className="foot_text">
-									About Us
-								</Link>
-							</li>
-							<li className="foot_link">
-								<Link to="/" className="foot_text">
-									Careers
-								</Link>
-							</li>
-							<li className="foot_link">
-								<Link to="/" className="foot_text">
-									Contact Us
-								</Link>
-							</li>
+								<h4 className="foot_head">Company</h4>
+								<li className="foot_link">
+									<Link to="/" className="foot_text">
+										About Us
+									</Link>
+								</li>
+								<li className="foot_link">
+									<Link to="/" className="foot_text">
+										Careers
+									</Link>
+								</li>
+								<li className="foot_link">
+									<Link to="/" className="foot_text">
+										Contact Us
+									</Link>
+								</li>
 						</div>
 						<div className="footer_two each_foot">
-							<h4 className="foot_head">Support</h4>
-							<li className="foot_link">
-								<Link to="/" className="foot_text">
-									Help Center
-								</Link>
-							</li>
-							<li className="foot_link">
-								<Link to="/" className="foot_text">
-									Safety Center
-								</Link>
-							</li>
+								<h4 className="foot_head">Support</h4>
+								<li className="foot_link">
+									<Link to="/" className="foot_text">
+										Help Center
+									</Link>
+								</li>
+								<li className="foot_link">
+									<Link to="/" className="foot_text">
+										Safety Center
+									</Link>
+								</li>
 						</div>
 						<div className="footer_three each_foot">
-							<h4 className="foot_head">Legal</h4>
-							<li className="foot_link">
-								<Link to="/" className="foot_text">
-									Cookies Policy
-								</Link>
-							</li>
-							<li className="foot_link">
-								<Link to="/" className="foot_text">
-									Privacy Policy
-								</Link>
-							</li>
-							<li className="foot_link">
-								<Link to="/" className="foot_text">
-									Terms of Service
-								</Link>
-							</li>
-							<li className="foot_link">
-								<Link to="/" className="foot_text">
-									Dispute resolution
-								</Link>
-							</li>
+								<h4 className="foot_head">Legal</h4>
+								<li className="foot_link">
+									<Link to="/" className="foot_text">
+										Cookies Policy
+									</Link>
+								</li>
+								<li className="foot_link">
+									<Link to="/" className="foot_text">
+										Privacy Policy
+									</Link>
+								</li>
+								<li className="foot_link">
+									<Link to="/" className="foot_text">
+										Terms of Service
+									</Link>
+								</li>
+								<li className="foot_link">
+									<Link to="/" className="foot_text">
+										Dispute resolution
+									</Link>
+								</li>
 						</div>
 						<div className="footer_four each_foot">
-							<h4 className="foot_head">Install App</h4>
-							<li>
-								<Link to="/">
-									<img
-										src={google_play}
-										alt="Google play"
-										className="download_play"
-									/>
-								</Link>
-							</li>
-							<li>
-								<Link to="/">
-									<img
-										src={app_store}
-										alt="App store"
-										className="download_play"
-									/>
-								</Link>
-							</li>
+								<h4 className="foot_head">Install App</h4>
+								<li>
+									<Link to="/">
+										<img
+											src={google_play}
+											alt="Google play"
+											className="download_play"
+										/>
+									</Link>
+								</li>
+								<li>
+									<Link to="/">
+										<img
+											src={app_store}
+											alt="App store"
+											className="download_play"
+										/>
+									</Link>
+								</li>
 						</div>
 					</div>
 					<hr className="hr_divider" />

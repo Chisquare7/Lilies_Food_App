@@ -15,7 +15,7 @@ const Dashboardpage = ({ data }) => {
 				<div className="dash_logos">
 					<div className="dash_logo">
 						<li>
-							<Link to="Dashboardpage">
+							<Link to="/Dashboardpage">
 								<img
 									src={Lilles_logo}
 									alt="home logo"
