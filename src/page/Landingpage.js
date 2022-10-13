@@ -17,9 +17,9 @@ const Landingpage = () => {
 			<div>
 				<div className="top_container">
 					<div className="main_container">
-						<button class="nav-toggle" aria-label="open navigation">
+						{/* <button class="nav-toggle" aria-label="open navigation">
 							<span class="hamburger"></span>
-						</button>
+						</button> */}
 						<div className="nav_container">
 							<div className="main_logo">
 								<li>

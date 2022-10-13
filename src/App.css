@@ -43,7 +43,7 @@ p {
 }
 
 /* Styling of Hamburger */
-.nav-toggle {
+/* .nav-toggle {
     cursor: pointer;
     border: 0;
     width: 3em;
@@ -94,14 +94,14 @@ p {
 .nav {
     visibility: hidden;
     height: 0;
-    /* position: absolute; */
+    position: absolute;
 }
 
 .nav--visible {
     visibility: visible;
     height: auto;
     position: relative;
-} 
+}  */
 
 /* 2. Styling of the navigation container */
 
